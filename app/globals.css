@@ -149,7 +149,9 @@
   .bg-blue-1 {
     background-color: var(--blue-1);
   }
-
+  .border-dark-1 {
+    border-color: var(--dark-1);
+  }
   .text-dark-1 {
     color: var(--dark-1);
   }

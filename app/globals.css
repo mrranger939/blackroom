@@ -76,15 +76,17 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-  --dark-1: #1C1F2E;
+  --dark-1: #1c1f2e;
   --dark-2: #161925;
-  --blue-1: #0E78F9;
-  --sky-1: #C9DDFF;
-  --sky-2: #ECF0FF;
-  --sky-3: #F5FCFF;
-  --orange-1: #FF742E;
-  --purple-1: #830EF9;
-  --yellow-1: #F9A90E;
+  --blue-1: #0e78f9;
+  --sky-1: #c9ddff;
+  --sky-2: #ecf0ff;
+  --sky-3: #f5fcff;
+  --dark-3: #252a41;
+  --dark-4: #1e2757;
+  --orange-1: #ff742e;
+  --purple-1: #830ef9;
+  --yellow-1: #f9a90e;
 }
 
 .dark {
@@ -119,9 +121,11 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
-  --dark-1: #1C1F2E;
+  --dark-1: #1c1f2e;
   --dark-2: #161925;
-  --blue-1: #0E78F9;
+  --dark-3: #252a41;
+  --dark-4: #1e2757;
+  --blue-1: #0e78f9;
 }
 
 @layer base {
@@ -134,10 +138,10 @@
 }
 @layer utilities {
   .flex-center {
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center;
   }
   .flex-between {
-    @apply flex justify-between items-center
+    @apply flex justify-between items-center;
   }
   .bg-dark-1 {
     background-color: var(--dark-1);
@@ -146,12 +150,31 @@
   .bg-dark-2 {
     background-color: var(--dark-2);
   }
+  .bg-dark-3 {
+    background-color: var(--dark-3);
+  }
+  .bg-dark-4 {
+    background-color: var(--dark-4);
+  }
   .bg-blue-1 {
     background-color: var(--blue-1);
   }
   .border-dark-1 {
     border-color: var(--dark-1);
   }
+
+  .border-dark-2 {
+    border-color: var(--dark-2);
+  }
+
+  .border-dark-3 {
+    border-color: var(--dark-3);
+  }
+
+  .border-dark-4 {
+    border-color: var(--dark-4);
+  }
+
   .text-dark-1 {
     color: var(--dark-1);
   }
@@ -159,21 +182,47 @@
   .text-dark-2 {
     color: var(--dark-2);
   }
+  .text-dark-3 {
+    color: var(--dark-3);
+  }
+  .text-dark-4 {
+    color: var(--dark-4);
+  }
   .text-blue-1 {
     color: var(--blue-1);
   }
-  .bg-sky-1 { background-color: var(--sky-1); }
-  .bg-sky-2 { background-color: var(--sky-2); }
-  .bg-sky-3 { background-color: var(--sky-3); }
+  .bg-sky-1 {
+    background-color: var(--sky-1);
+  }
+  .bg-sky-2 {
+    background-color: var(--sky-2);
+  }
+  .bg-sky-3 {
+    background-color: var(--sky-3);
+  }
 
-  .bg-orange-1 { background-color: var(--orange-1); }
-  .bg-purple-1 { background-color: var(--purple-1); }
-  .bg-yellow-1 { background-color: var(--yellow-1); }
+  .bg-orange-1 {
+    background-color: var(--orange-1);
+  }
+  .bg-purple-1 {
+    background-color: var(--purple-1);
+  }
+  .bg-yellow-1 {
+    background-color: var(--yellow-1);
+  }
 
-  .text-sky-1 { color: var(--sky-1); }
-  .text-orange-1 { color: var(--orange-1); }
-  .text-purple-1 { color: var(--purple-1); }
-  .text-yellow-1 { color: var(--yellow-1); }
+  .text-sky-1 {
+    color: var(--sky-1);
+  }
+  .text-orange-1 {
+    color: var(--orange-1);
+  }
+  .text-purple-1 {
+    color: var(--purple-1);
+  }
+  .text-yellow-1 {
+    color: var(--yellow-1);
+  }
 }
 
 /* animation */
@@ -278,5 +327,5 @@
 }
 
 .bg-hero {
-  background-image: url('/images/hero-background.png');
+  background-image: url("/images/hero-background.png");
 }

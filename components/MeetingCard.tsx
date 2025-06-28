@@ -61,9 +61,9 @@ const MeetingCard = ({
         {!isPreviousMeeting && (
           <div className="flex gap-2">
             <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
-              {buttonIcon1 && (
+              {/* {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="feature" width={20} height={20} />
-              )}
+              )} */}
               {buttonText}
             </Button>
             <Button
